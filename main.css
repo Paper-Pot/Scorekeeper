@@ -1,0 +1,81 @@
+
+body{
+    background-color: rgb(21, 21, 21);
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 30px 40px;
+
+    background-color: rgb(33, 33, 33);
+    box-shadow: 0 0 30px rgb(33, 33, 33);
+    border-radius: 20px;
+    color: white;
+
+    font-family: "Poppins", sans-serif;
+}
+h2{
+    margin-bottom: 0;
+}
+.score{
+    padding: 30px 20px;
+    font-weight: 700;
+    font-size: 2em;
+}
+.actionBtn{
+    outline: none;
+    font-size: 1em;
+    font-weight: 500;
+    border: none;
+    /* padding: 10px 5px; */
+    width: 100px;
+    min-height: 30px;
+    margin: 0 10px 20px;
+    color: whitesmoke !important;
+}
+#player1Btn{
+    background-color: rgb(17, 49, 138);
+}
+#player2Btn{
+    background-color: rgb(162, 104, 17);
+}
+#resetBtn{
+    background-color: rgb(134, 14, 14);
+}
+#maxScore{
+    outline: none;
+    width: 100px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid salmon;
+    font-size: 1em;
+    font-weight: 500;
+    text-align: center;
+    color: whitesmoke;
+}
+#maxScore:focus option{
+    border: none;
+    outline: none;
+}
+#maxScore option{
+    outline: none;
+    border: none;
+    background-color: rgb(33, 33, 33);
+}
+/* js invoked classes */
+.playerWinner{
+    color: green;
+}
+.playerLooser{
+    color: grey;
+}
+.disable{
+    pointer-events: none;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keep</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Ping Pong Score Keep</h2>
+        <div class="score">
+            <span id="player1Score" class="playerScore player1">0</span> to <span id="player2Score" class="playerScore player2">0</span>
+        </div>
+        <div class="btnGroup">
+            <button id="player1Btn" class="actionBtn playerBtn player1">Player 1</button>
+            <button id="player2Btn" class="actionBtn playerBtn player2">Player 2</button>
+            <button id="resetBtn" class="actionBtn">Reset</button>
+        </div>
+        <p>Select the maximum score for winning</p>
+        <form action="">
+            <select name="maxScore" id="maxScore">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+            </select>
+        </form>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
